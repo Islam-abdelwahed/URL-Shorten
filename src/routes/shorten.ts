@@ -1,6 +1,6 @@
 import express, { Request, Response, NextFunction } from "express";
 import { body, validationResult } from "express-validator";
-import { Link } from "../models/links";
+import { Link } from "../models/links.js";
 import { randomBytes } from "crypto";
 import { access } from "fs/promises";
 
