@@ -13,7 +13,6 @@ interface LinkModel extends mongoose.Model<any> {
 interface UserDoc extends LinkAttrs, mongoose.Document {
   createdAt: string;
   updatedAt: string;
-  
 }
 const linkSchema = new Schema(
   {

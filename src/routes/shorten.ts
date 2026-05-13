@@ -48,13 +48,13 @@ router.get(
       link.accessCount = link.accessCount + 1;
       await link.save();
 
-    //   res.status(200).json({
-    //     id: link._id,
-    //     url: link.url,
-    //     shortCode: link.shortCode,
-    //     createdAt: link.createdAt,
-    //     updatedAt: link.updatedAt,
-    //   });
+      // res.status(200).json({
+      //   id: link._id,
+      //   url: link.url,
+      //   shortCode: link.shortCode,
+      //   createdAt: link.createdAt,
+      //   updatedAt: link.updatedAt,
+      // });
     res.redirect(link.url)
     } catch (error) {
       next(error);
